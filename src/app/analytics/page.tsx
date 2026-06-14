@@ -14,6 +14,7 @@ interface Pattern {
 interface AnalyticsData {
   patterns: Pattern[]
   recommendations: string[]
+  timestamp?: string
   metrics?: {
     total_posts: number
     total_impressions: number
@@ -178,7 +179,7 @@ export default function AnalyticsDashboard() {
 
         {/* Last Updated */}
         <div className="text-sm text-slate-400 border-t border-slate-700 pt-4">
-          Last updated: {new Date(data.generated_at || Date.now()).toLocaleString()}
+          Last updated: {data.timestamp ? new Date(data.timestamp).toLocaleString() : 'Just now'}
         </div>
       </div>
     </div>
