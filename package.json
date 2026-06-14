@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Semi-autonomous thought leadership engine",
   "scripts": {
-    "dev": "next dev -p 3737",
+    "dev": "next dev -p 3738",
     "build": "next build",
-    "start": "next start -p 3737",
+    "start": "next start -p 3738",
     "lint": "next lint"
   },
   "dependencies": {

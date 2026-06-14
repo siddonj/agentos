@@ -39,6 +39,3 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export function setDemoData(data: any) {
-  demoState = data
-}
