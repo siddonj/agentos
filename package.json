@@ -1,0 +1,31 @@
+{
+  "name": "agent-os",
+  "version": "1.0.0",
+  "description": "Semi-autonomous thought leadership engine",
+  "scripts": {
+    "dev": "next dev -p 3737",
+    "build": "next build",
+    "start": "next start -p 3737",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0",
+    "typescript": "^5.2.2",
+    "lucide-react": "^0.307.0",
+    "react-markdown": "^8.0.7",
+    "clsx": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/better-sqlite3": "^7.6.8",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.0.0"
+  }
+}

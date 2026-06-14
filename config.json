@@ -1,0 +1,6 @@
+{
+  "vaultRoot": "c:\\users\\siddo\\Obsidian",
+  "databasePath": "./data/agent-os.db",
+  "dashboardPort": 3737,
+  "appRoot": ".."
+}
