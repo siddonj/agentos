@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createStrategicPlan, addRecommendation, addForecast } from '@/lib/analytics/insights-engine'
+import { createStrategicPlan, addRecommendation, addForecast, StrategicPlan, Recommendation, PerformanceForecast } from '@/lib/analytics/insights-engine'
 
 export async function GET(request: NextRequest) {
   try {
     // Create demo strategic plans
-    const plans = [
+    const plans: StrategicPlan[] = [
       {
         title: 'Q3 Authority Building Initiative',
         objective: 'Increase authority score from 55 to 80 through strategic media and speaking',
@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Create demo recommendations
-    const recommendations = [
+    const recommendations: Recommendation[] = [
       {
         category: 'Authority',
         title: 'Accelerate Authority Building',
@@ -84,7 +84,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Create demo performance forecasts
-    const forecasts = [
+    const forecasts: PerformanceForecast[] = [
       {
         metric_name: 'Followers',
         forecast_date: '2026-07-14',
